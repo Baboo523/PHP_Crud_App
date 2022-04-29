@@ -1,6 +1,6 @@
 <?php include 'header.php'; ?>
 <div id="main-content">
-    <h2>Add New Record</h2>
+    <h2>Add New Record Here</h2>
     <form class="post-form" action="savedata.php" method="post">
         <div class="form-group">
             <label>Name</label>
@@ -13,10 +13,10 @@
         <div class="form-group">
             <label>Class</label>
             <select name="class">
-                <option value="" selected disabled>Select Class</option>
+                <option value="" selected disabled>Choose Class</option>
               
                 <?php
-                     $conn = mysqli_connect("localhost","root","","crud") or die("connection Failed");
+                     $conn = mysqli_connect("localhost","root","","crud") or die("Connection Failed");
 
                     $sql = "SELECT * FROM studentclass";
                     $result = mysqli_query($conn,$sql) or die ("Query Unsuccessful.");

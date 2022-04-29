@@ -2,7 +2,7 @@
 include 'header.php';
 ?>
 <div id="main-content">
-    <h2>All Records</h2>
+    <h2>All Records of Student</h2>
 
     <?php
      $conn = mysqli_connect("localhost","root","","crud") or die("connection Failed");
@@ -42,7 +42,7 @@ include 'header.php';
         </tbody>
     </table>
     <?php } else{
-        echo "<h2>No record found</h2>";
+        echo "<h2>Sorry! No record found</h2>";
     }
     mysqli_close($conn); 
     ?>
